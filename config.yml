@@ -2,15 +2,19 @@ title: This is my first course
 tagline: A brand new course on Learning Lab
 description: To create branch and PR
 template:
-  repo: this-is-my-first-course-template
-  name: this-is-my-first-course
+  repo: data-solutions-training-user
+  name: data-solutions-training
+  description: Data Solution Training Repository
 before:
   - type: createIssue
     title: Welcome!
     body: new-issue.md
+    action_id: '10'
 steps:
-  - title: First step
-    description: The first step in your course
+  - title: Create a branch
+    description: >-
+      To work on a new building block or update an existing one, you need to
+      create a branch
     event: issues.assigned
     link: '{{ repoUrl }}'
     actions:
